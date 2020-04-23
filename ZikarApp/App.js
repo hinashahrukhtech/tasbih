@@ -1,27 +1,23 @@
-import React from 'react';
-import { StyleSheet, ImageBackground,resizeMode, Image ,Dimensions} from 'react-native';
-import RegisterForm  from './Components/Register';
-import logo from './Components/images/logo.png';
+import React,{Component} from 'react';
+import Register  from './Components/Register';
+import JoinZikar from './Components/JoinZikar';
 import Home  from './Components/Home';
 import SelfCounter  from './Components/SelfCounter';
- 
+import GroupCounter from './Components/GroupCounter';
+import CreateGroup from './Components/CreateGroup';
+import SelfZikar from './Components/SelfZikar';
+import Map from './Components/Map';
 export default class App extends React.Component {
   render(){
  return(
-      <ImageBackground source= {logo} style={styles.bgcontainer} >
-      <RegisterForm/>
-     </ImageBackground>
-   // <Home/>
-   //<SelfCounter/>
+
+   <SelfZikar/>
+   //<Register/>
+ //<CreateGroup/>
+  // <JoinZikar/> 
+  // <Home/>
+  // <SelfCounter/>
+   //<GroupCounter/>
  );
 }
 }
-const styles = StyleSheet.create({
-  
-  bgcontainer:{
-    flex:2,
-    justifyContent:"center",
-    alignItems:"center",
-  }
-  
-});
