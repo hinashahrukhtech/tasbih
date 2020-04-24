@@ -11,7 +11,7 @@ export default StyleSheet.create( {
       },
       Container: {
         marginLeft:"10%",
-       marginTop:"70%",
+       marginTop:"90%",
         justifyContent:"center",
         width:"100%",
       },
@@ -28,7 +28,7 @@ export default StyleSheet.create( {
        maxWidth:"90%",
       },
       btn:{
-        marginTop:"25%",
+        marginTop:"17%",
         borderRadius:10,
         backgroundColor:'#0E061C',
         color:'#F9FDF0',
@@ -48,11 +48,12 @@ export default StyleSheet.create( {
         width:"90%",
              },
       text:{
-        textAlignVertical:"center",
+        justifyContent:"center",
+        textAlign:"center",
            fontSize:30,        
            color:'#F9FDF0',
-        textAlign:"center",
-        justifyContent:"center",  
+   
+          
       },
       btnContainer:{
         marginTop:"33%",
@@ -72,8 +73,8 @@ export default StyleSheet.create( {
       borderRadius:10,
     },
     BtnC:{
-      marginTop:"115%",
-      padding:10,
+      marginTop:"120%",
+           padding:10,
       borderRadius:50,
       color:'#F9FDF0',
       borderWidth:2,
@@ -85,6 +86,7 @@ export default StyleSheet.create( {
     },
 
     btnCC:{
+      marginTop:"12%",
       flex: 1,
       flexDirection: 'row',
       alignItems: 'center',
@@ -102,7 +104,7 @@ export default StyleSheet.create( {
     width:"90%",
   } ,
   RVIEW2:{
-     marginTop:"1%",
+     marginTop:20,
     height:50,
     backgroundColor:'#F9FDF0',
     flexDirection:"row",
@@ -115,12 +117,18 @@ export default StyleSheet.create( {
   },
 
 text2:{
-  padding:15,
+  padding:12,
   textAlignVertical:"center",
   fontSize:15,        
   color:"#0E061C",
-}
-}
+},
+Container2: {
+  marginLeft:"10%",
+ marginTop:"56%",
+  justifyContent:"center",
+  width:"100%",
+
+}}
 
     );
 

@@ -14,6 +14,7 @@ export default class Register extends React.Component {
     return (
       <ImageBackground source= {logo} style={StyleSheet.bgcontainer} >
               <View style={StyleSheet.Container}  >
+              <Text style={StyleSheet.text}>REGISTER</Text>
               <TextInput style={StyleSheet.Input} placeholder="Your Name" underlineColorAndroid={'transparent'} />
         
         <TextInput style={StyleSheet.Input} placeholder="Countery" underlineColorAndroid={'transparent'}/>

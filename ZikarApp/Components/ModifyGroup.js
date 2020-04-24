@@ -9,12 +9,12 @@ import {
      import logo from './images/logo.png';
      import StyleSheet from './Style';
 
-export default class CreateGroup extends React.Component {
+export default class ModifyGroup extends React.Component {
   render() {
     return (
         <ImageBackground source= {logo} style={StyleSheet.bgcontainer}>
         <View style={StyleSheet.Container2}>
-      <Text style={StyleSheet.text}>CREATE GROUP</Text>
+      <Text style={StyleSheet.text}>MODIFY GROUP</Text>
         </View>
         <View style={StyleSheet.RVIEW2}>
           <Text style={StyleSheet
@@ -34,7 +34,7 @@ export default class CreateGroup extends React.Component {
           <View style={StyleSheet.btnContainer}>
         <TouchableOpacity style={StyleSheet.btnT}>
         <Text style={StyleSheet
-          .text}>CREATE</Text>
+          .text}>MODIFIED</Text>
         </TouchableOpacity>
         <TouchableOpacity style={StyleSheet.btnT}>
         <Text style={StyleSheet

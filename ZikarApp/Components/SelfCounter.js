@@ -13,7 +13,7 @@ export default class SelfCounter extends React.Component {
     return (
       <ImageBackground source= {Screen} style={StyleSheet.bgcontainer}>
         
-        <View style={StyleSheet.Container}>
+        <View style={StyleSheet.Container2}>
         <Text style={StyleSheet.text}>0</Text>
         </View>
         <View style={StyleSheet.btnCC}>
@@ -27,11 +27,11 @@ export default class SelfCounter extends React.Component {
         <View style={StyleSheet.btnContainer}>
         <TouchableOpacity style={StyleSheet.btnT}>
         <Text style={StyleSheet
-          .text}>Continue</Text>
+          .text}>HOME</Text>
         </TouchableOpacity>
         <TouchableOpacity style={StyleSheet.btnT}>
         <Text style={StyleSheet
-          .text}>Continue</Text>
+          .text}>BACK</Text>
         </TouchableOpacity>
         
        </View>
