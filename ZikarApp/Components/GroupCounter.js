@@ -13,7 +13,7 @@ export default class SelfCounter extends React.Component {
     return (
       <ImageBackground source= {Screen} style={StyleSheet.bgcontainer}>
         
-        <View style={StyleSheet.Container2}>
+        <View style={StyleSheet.Container}>
         <Text style={StyleSheet
           .text}>0</Text>
         </View>

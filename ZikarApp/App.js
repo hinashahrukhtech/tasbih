@@ -8,18 +8,24 @@ import CreateGroup from './Components/CreateGroup';
 import SelfZikar from './Components/SelfZikar';
 import SelectGroup from './Components/SelectGroup';
 import ModifyGroup from './Components/ModifyGroup';
+import ZikarHistory from './Components/ZikarHistory';
+import AlreadyCreate from './Components/AlreadyCreatedGroup';
+import NewSelfZikar from './Components/NewSelfZikar';
 export default class App extends React.Component {
   render(){
  return(
+//<NewSelfZikar/>
+  //<AlreadyCreate/>
 //<SelectGroup/>
-   //<SelfZikar/>
-   //<Register/>
+   <SelfZikar/>
+  //<Register/>
  //<CreateGroup/>
-   //<JoinZikar/> 
+ //<JoinZikar/> 
    //<Home/>
-  <SelfCounter/>
+  //<SelfCounter/>
   //<ModifyGroup/>  
-   //<GroupCounter/>
+  // <GroupCounter/>
+//<ZikarHistory/>
  );
 }
 }

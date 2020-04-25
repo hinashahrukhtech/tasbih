@@ -15,6 +15,7 @@ export default class SelfZikar extends React.Component {
     return (
         <ImageBackground source= {logo} style={StyleSheet.bgcontainer}>
             <View style={StyleSheet.Container}  >
+            <Text style={StyleSheet.text}>SELF ZIKAR</Text>
     <TouchableOpacity style={StyleSheet.btnRound}>
         <Text style={StyleSheet.text}>PREVIOUS ZIKAR</Text>
         </TouchableOpacity>
@@ -22,12 +23,9 @@ export default class SelfZikar extends React.Component {
         <Text style={StyleSheet.text}>NEW ZIKAR</Text>
         </TouchableOpacity>
         </View>
-        <View style={StyleSheet.btnContainer}>
-        <TouchableOpacity style={StyleSheet.btn}>
-    
+       <TouchableOpacity style={StyleSheet.btn}>
         <Text style={StyleSheet.text}>BACK</Text>
        </TouchableOpacity>
-       </View>
         </ImageBackground>
         );
     }

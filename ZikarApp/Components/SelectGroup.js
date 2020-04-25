@@ -13,6 +13,7 @@ export default class SelectGroup extends React.Component {
     return (
       <ImageBackground source= {logo} style={StyleSheet.bgcontainer} >
               <View style={StyleSheet.Container}  >
+      <Text style={StyleSheet.text}>CHOOSE GROUP</Text>
     <TouchableOpacity style={StyleSheet.btnRound}>
         <Text style={StyleSheet.text}>FAMILY ZIKAR GROUP</Text>
         </TouchableOpacity>

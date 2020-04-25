@@ -13,23 +13,23 @@ export default class CreateGroup extends React.Component {
   render() {
     return (
         <ImageBackground source= {logo} style={StyleSheet.bgcontainer}>
-        <View style={StyleSheet.Container2}>
+        <View style={StyleSheet.Container}>
       <Text style={StyleSheet.text}>CREATE GROUP</Text>
-        </View>
-        <View style={StyleSheet.RVIEW2}>
+        <View style={StyleSheet.RVIEW}>
           <Text style={StyleSheet
           .text2}>Tasbeeh Name |  </Text>
           <TextInput style={StyleSheet.Input2} placeholder="Enter tasbeeh name" underlineColorAndroid={'transparent'} />
           </View>
-          <View style={StyleSheet.RVIEW2}>
+          <View style={StyleSheet.RVIEW}>
           <Text style={StyleSheet
           .text2}>Tasbeeh Picture |  </Text>
           <TextInput style={StyleSheet.Input2} placeholder="Select picture" underlineColorAndroid={'transparent'} />
           </View>
-          <View style={StyleSheet.RVIEW2}>
+          <View style={StyleSheet.RVIEW}>
           <Text style={StyleSheet
           .text2}>How much time |  </Text>
           <TextInput style={StyleSheet.Input2} placeholder="Enter how much time" underlineColorAndroid={'transparent'} />
+          </View>
           </View>
           <View style={StyleSheet.btnContainer}>
         <TouchableOpacity style={StyleSheet.btnT}>

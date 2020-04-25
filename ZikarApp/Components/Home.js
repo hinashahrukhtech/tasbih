@@ -12,7 +12,7 @@ export default class Home extends React.Component {
   render() {
     return (
       <ImageBackground source= {logo} style={StyleSheet.bgcontainer} >
-              <View style={StyleSheet.Container}  >
+              <View style={StyleSheet.Container1}  >
     <TouchableOpacity style={StyleSheet.btnRound}>
         <Text style={StyleSheet.text}>CREATE ZIKAR GROUP</Text>
         </TouchableOpacity>
