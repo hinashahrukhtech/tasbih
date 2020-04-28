@@ -10,7 +10,12 @@ import {
      import StyleSheet from './Style';
 
 export default class CreateGroup extends React.Component {
+  static NavigationOptions= {
+    title:'Home',
+
+}
   render() {
+    const { navigate }=this.props.navigation;
     return (
         <ImageBackground source= {logo} style={StyleSheet.bgcontainer}>
         <View style={StyleSheet.Container}>
@@ -34,7 +39,11 @@ export default class CreateGroup extends React.Component {
           <View style={StyleSheet.btnContainer}>
         <TouchableOpacity style={StyleSheet.btnT}>
         <Text style={StyleSheet
-          .text}>CREATE</Text>
+              .text}
+              onPress={() => navigate(
+                'SelectGroup',{ screen:'SelectGroup' }
+              ) }
+            >CREATE</Text>
         </TouchableOpacity>
         <TouchableOpacity style={StyleSheet.btnT}>
         <Text style={StyleSheet
