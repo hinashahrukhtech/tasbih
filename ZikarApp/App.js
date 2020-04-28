@@ -17,11 +17,11 @@ export default class App extends React.Component {
 //<NewSelfZikar/>
   //<AlreadyCreate/>
 //<SelectGroup/>
-   <SelfZikar/>
+  //  <SelfZikar/>
   //<Register/>
  //<CreateGroup/>
  //<JoinZikar/> 
-   //<Home/>
+   <Home/>
   //<SelfCounter/>
   //<ModifyGroup/>  
   // <GroupCounter/>
