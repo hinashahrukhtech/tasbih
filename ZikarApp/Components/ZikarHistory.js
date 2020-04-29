@@ -10,7 +10,11 @@ import {
      import StyleSheet from './Style';
 
 export default class ZikarHistory extends React.Component {
+  static NavigationOptions= {
+    title:'SelfZikar',
+}
   render() {
+    const { navigate }=this.props.navigation;
     return (
       <ImageBackground source= {logo} style={StyleSheet.bgcontainer}>
           <View style={StyleSheet.Container}>
@@ -44,17 +48,16 @@ export default class ZikarHistory extends React.Component {
  </View>
  </View>
               </View>
-              <View style={StyleSheet.btnContainer}>
-        <TouchableOpacity style={StyleSheet.btnT}>
+      
+        <TouchableOpacity style={StyleSheet.btnT}
+ onPress={() => navigate(
+  'Home',{ screen:'Home' }
+) }>
         <Text style={StyleSheet
           .text}>HOME</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={StyleSheet.btnT}>
-        <Text style={StyleSheet
-          .text}>BACK</Text>
-        </TouchableOpacity>
         
-       </View>
+      
       </ImageBackground>
     );
   }

@@ -11,6 +11,7 @@ import {
 
 export default class ModifyGroup extends React.Component {
   render() {
+    const { navigate }=this.props.navigation;
     return (
         <ImageBackground source= {logo} style={StyleSheet.bgcontainer}>
          <View style={StyleSheet.Container}  >
@@ -32,7 +33,10 @@ export default class ModifyGroup extends React.Component {
           </View>
           </View>
           <View style={StyleSheet.btnContainer}>
-        <TouchableOpacity style={StyleSheet.btnT}>
+        <TouchableOpacity style={StyleSheet.btnT}
+         onPress={() => navigate(
+          'AlreadyCreatedGroup',{ screen:'AlreadyCreatedGroup' }
+        ) }>
         <Text style={StyleSheet
           .text}>MODIFIED</Text>
         </TouchableOpacity>

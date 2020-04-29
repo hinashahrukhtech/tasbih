@@ -18,25 +18,24 @@ export default class Home extends React.Component {
     return (
       <ImageBackground source= {logo} style={StyleSheet.bgcontainer} >
               <View style={StyleSheet.Container1}  >
-    <TouchableOpacity style={StyleSheet.btnRound}>
+    <TouchableOpacity style={StyleSheet.btnRound} onPress={() => navigate(
+                'SelectGroup',{ screen:'SelectGroup' }
+              ) }>
             <Text style={StyleSheet.text}
-              onPress={() => navigate(
-                'CreateGroup',{ screen:'CreateGroup' }
-              ) }
+              
             >CREATE ZIKAR GROUP</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={StyleSheet.btnRound}>
-            <Text style={StyleSheet.text}
-             onPress={() => navigate(
+        <TouchableOpacity style={StyleSheet.btnRound} onPress={() => navigate(
               'JoinZikar',{ screen:'JoinZikar' }
-            ) }
+            ) }>
+            <Text style={StyleSheet.text}
             >JOIN ZIKAR GROUP</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={StyleSheet.btnRound}>
-            <Text style={StyleSheet.text}
+        <TouchableOpacity style={StyleSheet.btnRound} 
              onPress={() => navigate(
               'SelfZikar',{ screen:'SelfZikar' }
-            ) }
+            ) }>
+            <Text style={StyleSheet.text}
             >SELF ZIKAR</Text>
        </TouchableOpacity> 
        </View>

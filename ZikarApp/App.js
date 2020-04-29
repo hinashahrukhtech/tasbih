@@ -11,13 +11,13 @@ import SelfZikar from './Components/SelfZikar';
 import SelectGroup from './Components/SelectGroup';
 import ModifyGroup from './Components/ModifyGroup';
 import ZikarHistory from './Components/ZikarHistory';
-import AlreadyCreate from './Components/AlreadyCreatedGroup';
+import AlreadyCreatedGroup from './Components/AlreadyCreatedGroup';
 import NewSelfZikar from './Components/NewSelfZikar';
 
 const Navigator = createStackNavigator({
   Home: { screen: Home },
   NewSelfZikar: { screen: NewSelfZikar },
-  AlreadyCreate: { screen:AlreadyCreate },
+  AlreadyCreatedGroup: { screen:AlreadyCreatedGroup },
   SelectGroup: { screen: SelectGroup },
   SelfZikar: { screen: SelfZikar },
   Register: { screen: Register },

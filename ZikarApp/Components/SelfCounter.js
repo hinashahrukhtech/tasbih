@@ -9,7 +9,11 @@ import {
      import StyleSheet from './Style';
 
 export default class SelfCounter extends React.Component {
+  static NavigationOptions= {
+    title:'NewSelfZikar',
+}
   render() {
+    const { navigate }=this.props.navigation;
     return (
       <ImageBackground source= {Screen} style={StyleSheet.bgcontainer}>
         
@@ -25,7 +29,10 @@ export default class SelfCounter extends React.Component {
         </TouchableOpacity>
         </View>
         <View style={StyleSheet.btnContainer}>
-        <TouchableOpacity style={StyleSheet.btnT}>
+        <TouchableOpacity style={StyleSheet.btnT}
+        onPress={() => navigate(
+          'ZikarHistory',{ screen:'ZikarHistory' }
+        ) }>
         <Text style={StyleSheet
           .text}>SAVE</Text>
         </TouchableOpacity>
