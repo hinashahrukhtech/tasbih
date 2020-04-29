@@ -10,10 +10,7 @@ import {
      import StyleSheet from './Style';
 
 export default class CreateGroup extends React.Component {
-  static NavigationOptions= {
-    title:'Home',
 
-}
   render() {
     const { navigate }=this.props.navigation;
     return (
@@ -37,15 +34,13 @@ export default class CreateGroup extends React.Component {
           </View>
           </View>
           <View style={StyleSheet.btnContainer}>
-        <TouchableOpacity style={StyleSheet.btnT}>
-        <Text style={StyleSheet
-              .text}
-              onPress={() => navigate(
-                'SelectGroup',{ screen:'SelectGroup' }
-              ) }
-            >CREATE</Text>
+        <TouchableOpacity style={StyleSheet.btnT} onPress={() => navigate(
+                'GroupCounter',{ screen:'GroupCounter' })}>
+        <Text style={StyleSheet.text}>CREATE</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={StyleSheet.btnT}>
+        <TouchableOpacity style={StyleSheet.btnT}
+         onPress={() => navigate(
+          'Home',{ screen:'Home' })}>
         <Text style={StyleSheet
           .text}>BACK</Text>
           </TouchableOpacity>

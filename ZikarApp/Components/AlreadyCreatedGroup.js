@@ -10,7 +10,11 @@ import {
      import StyleSheet from './Style';
 
 export default class AlreadyCreate extends React.Component {
+  static NavigationOptions= {
+    title:'Home',
+}
   render() {
+    const { navigate }=this.props.navigation;
     return (
       <ImageBackground source= {logo} style={StyleSheet.bgcontainer}>
           <View style={StyleSheet.Container}>
@@ -38,7 +42,10 @@ export default class AlreadyCreate extends React.Component {
           </TouchableOpacity>
     <Text style={StyleSheet
     .text3}>|</Text>
-    <TouchableOpacity style={StyleSheet.btnS}>
+    <TouchableOpacity style={StyleSheet.btnS}
+     onPress={() => navigate(
+      'ModifyGroup',{ screen:'ModifyGroup' }
+    ) }>
         <Text style={StyleSheet
           .text4}>MODIFY</Text>
           </TouchableOpacity>
@@ -47,7 +54,10 @@ export default class AlreadyCreate extends React.Component {
  </View>
               </View>
               <View style={StyleSheet.btnContainer}>
-        <TouchableOpacity style={StyleSheet.btnT}>
+        <TouchableOpacity style={StyleSheet.btnT}
+         onPress={() => navigate(
+          'Home',{ screen:'Home' }
+        ) }>
         <Text style={StyleSheet
           .text}>HOME</Text>
         </TouchableOpacity>

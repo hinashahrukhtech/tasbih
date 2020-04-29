@@ -10,7 +10,11 @@ import {
      import StyleSheet from './Style';
 
 export default class NewSelfZikar extends React.Component {
+  static NavigationOptions= {
+    title:'SelfZikar',
+}
   render() {
+    const { navigate }=this.props.navigation;
     return (
         <ImageBackground source= {logo} style={StyleSheet.bgcontainer}>
          <View style={StyleSheet.Container}  >
@@ -28,7 +32,10 @@ export default class NewSelfZikar extends React.Component {
           
           </View>
           <View style={StyleSheet.btnContainer}>
-        <TouchableOpacity style={StyleSheet.btnT}>
+        <TouchableOpacity style={StyleSheet.btnT}
+        onPress={() => navigate(
+          'SelfCounter',{ screen:'SelfCounter' }
+        ) }>
         <Text style={StyleSheet
           .text}>START</Text>
         </TouchableOpacity>
