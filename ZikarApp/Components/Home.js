@@ -9,12 +9,9 @@ import {
      import StyleSheet from './Style';
 
 export default class Home extends React.Component {
-  static NavigationOptions= {
-       title:'Home',
-
-  }
+  
   render() {
-    const { navigate }=this.props.navigation;
+
     return (
       <ImageBackground source= {logo} style={StyleSheet.bgcontainer} >
               <View style={StyleSheet.Container1}  >

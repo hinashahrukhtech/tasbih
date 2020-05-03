@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add expo
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add @react-natine-community/async-storage
 
 PATH: 
   C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\Users\Hamza Sabir\AppData\Local\Microsoft\WindowsApps;C:\Users\Hamza Sabir\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Hamza Sabir\AppData\Local\GitHubDesktop\bin;C:\Users\Hamza Sabir\AppData\Roaming\npm;C:\Users\Hamza Sabir\AppData\Local\Yarn\bin
@@ -14,8 +14,17 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com
-      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:64:26)
+  Error: https://registry.yarnpkg.com/@react-natine-community%2fasync-storage: Not found
+      at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:66096:18)
+      at Request.self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:140748:22)
+      at Request.emit (events.js:311:20)
+      at Request.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141720:10)
+      at Request.emit (events.js:311:20)
+      at IncomingMessage.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141642:12)
+      at Object.onceWrapper (events.js:417:28)
+      at IncomingMessage.emit (events.js:323:22)
+      at endReadableNT (_stream_readable.js:1204:12)
+      at processTicksAndRejections (internal/process/task_queues.js:84:21)
 
 npm manifest: 
   {
@@ -29,7 +38,12 @@ npm manifest:
     },
     "dependencies": {
       "@react-native-community/masked-view": "0.1.6",
+      "body-parser": "^1.19.0",
+      "expess": "0.0.1-security",
       "expo": "^37.0.8",
+      "jsonwebtoken": "^8.5.1",
+      "mongoose": "^5.9.10",
+      "nodeman": "^1.1.2",
       "react": "~16.13.1",
       "react-dom": "~16.13.1",
       "react-native": "https://github.com/expo/react-native/archive/sdk-37.0.1.tar.gz",
