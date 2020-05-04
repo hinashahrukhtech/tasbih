@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { 
      TextInput,
      TouchableOpacity,
@@ -9,23 +9,38 @@ import {
      import logo from './images/logo.png';
      import StyleSheet from './Style';
 
-export default class Register extends React.Component {
-  render() {
+
+     const Register=()=>{
+  
+
+  sendCred=()=>{
+  fetch("http://192.168.13:19001/")
+  .then(res=>res.json())
+  .then(data=>{
+    console.log(data)
+  })
+ 
+  }
+    const[name,setname]=useState('');
+    const[country,setcountry]=useState('');
+   const[password,setpassword]=useState('');
+    
     return (
       <ImageBackground source= {logo} style={StyleSheet.bgcontainer} >
               <View style={StyleSheet.Container}  >
               <Text style={StyleSheet.text}>REGISTER</Text>
-              <TextInput style={StyleSheet.Input} placeholder="Your Name" underlineColorAndroid={'transparent'} />
+              <TextInput Label='name' value={name} style={StyleSheet.Input} placeholder="Your Name" underlineColorAndroid={'transparent'}  onChangeText={(text)=>setname(text)}/>
         
-        <TextInput style={StyleSheet.Input} placeholder="Countery" underlineColorAndroid={'transparent'}/>
+        <TextInput Label='country' value={country}  style={StyleSheet.Input} placeholder="Countery" underlineColorAndroid={'transparent'} onChangeText={(text)=>setcountry(text)}/>
         
-        <TextInput style={StyleSheet.Input} placeholder="pasword" underlineColorAndroid={'transparent'}/>
+        <TextInput  Label='password'  value={password} style={StyleSheet.Input} placeholder="pasword" underlineColorAndroid={'transparent'} secureTextEntry={true} onChangeText={(text)=>setpassword(text)}/>
         </View>
-        <TouchableOpacity style={StyleSheet.btn}>
+        <TouchableOpacity style={StyleSheet.btn} onPress={()=>sendCred()}>
         <Text style={StyleSheet.text}>CONTINUE</Text>
        </TouchableOpacity>
       
      </ImageBackground>
     );
-  }
-}
+  
+};
+export default Register;
