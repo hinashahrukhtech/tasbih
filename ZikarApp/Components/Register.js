@@ -8,23 +8,37 @@ import {
      } from 'react-native';
      import logo from './images/logo.png';
      import StyleSheet from './Style';
+import AsyncStorage from '@react-native-community/async-storage';
 
-
-     const Register=()=>{
+     const Register=async(props)=>{
   
 
-  sendCred=()=>{
-  fetch("http://192.168.13:19001/")
-  .then(res=>res.json())
-  .then(data=>{
-    console.log(data)
-  })
- 
-  }
-    const[name,setname]=useState('');
-    const[country,setcountry]=useState('');
-   const[password,setpassword]=useState('');
+      const [name,setname] = useState('');
+      const [country,setcountry]=useState('');
+      const [password,setpassword]=useState('')
     
+      const sendCred= async (props)=>{
+         fetch("http://192.168.100.13:3000/Register",{
+           method:"POST",
+           headers: {
+            'Content-Type': 'application/json'
+          },
+          body:JSON.stringify({
+            "name":name,
+            "country":country,
+            "password":password
+          })
+         })
+         .then(res=>res.json())
+         .then(async (data)=>{
+                try {
+                  await AsyncStorage.setItem('token',data.token)
+                  props.navigation.replace("Home")
+                } catch (e) {
+                  console.log("error hai",e)
+                }
+         })
+      }
     return (
       <ImageBackground source= {logo} style={StyleSheet.bgcontainer} >
               <View style={StyleSheet.Container}  >
