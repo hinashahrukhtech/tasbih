@@ -11,6 +11,18 @@ import {
 export default class Home extends React.Component {
   
   render() {
+    const detectLogin= async ()=>{
+      const token = await AsyncStorage.getItem('token')
+          if(token){
+                props.navigation.replace("Home")
+          }else{
+              props.navigation.replace("Register")
+          }
+    }
+    useEffect(()=>{
+     detectLogin()
+    },[])
+  
 
     return (
       <ImageBackground source= {logo} style={StyleSheet.bgcontainer} >
