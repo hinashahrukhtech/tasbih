@@ -1,0 +1,26 @@
+{
+    "name": "tasbih",
+    "version": "0.0.1",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {
+        "mongoose": "^5.9.13",
+        "react-native": "^0.62.2",
+        "react-native-gesture-handler": "^1.6.1"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "start": "node index.js",
+        "test": "jest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hinashahrukhtech/tasbih.git"
+    },
+    "author": "Hina Shahrukh Technologies (Private) Limited",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/hinashahrukhtech/tasbih/issues"
+    },
+    "homepage": "https://github.com/hinashahrukhtech/tasbih#readme"
+}
