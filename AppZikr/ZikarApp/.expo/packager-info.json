@@ -2,9 +2,9 @@
   "expoServerPort": 19000,
   "expoServerNgrokUrl": "https://gm-u7c.anonymous.zikarapp.exp.direct",
   "packagerNgrokUrl": "https://packager.gm-u7c.anonymous.zikarapp.exp.direct",
-  "ngrokPid": 15792,
+  "ngrokPid": 2120,
   "packagerPort": 19001,
-  "packagerPid": 12776,
+  "packagerPid": 8024,
   "webpackServerPort": null,
   "devToolsPort": 19002
 }
